@@ -14,7 +14,7 @@ export default function Contact() {
   console.log(watch("example")); // watch input value by passing the name of it
 
   return (
-    <div className="flex flex-col items-center my-16">
+    <div className="flex flex-col items-center my-16" id="contact">
       <h2 className="text-2xl md:text-5xl font-bold underline ">Contact Me.</h2>
       <div className="py-4  font-bold text-xl ">
         <p className="pb-2">Rwanda, Kigali</p>

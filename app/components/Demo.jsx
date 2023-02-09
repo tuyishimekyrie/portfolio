@@ -9,11 +9,11 @@ const Demo = ({ src, name }) => {
       {" "}
       <div className="flex flex-col my-8 md:m-0">
         <Image
-          src={src}
+          src="https://raw.githubusercontent.com/tuyishimekyrie/Page_Images/main/pages/desktop-design2.jpg"
           alt="image"
-          width={900}
+          width={800}
           height={100}
-          className="object-cover h-64 md:h-80"
+          className="object-cover h-64 md:h-80 w-full "
         />
         <div className="flex justify-between mt-4">
           <p className="text-sm md:text-xl font-semibold">{name}.</p>

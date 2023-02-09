@@ -15,7 +15,7 @@ import wordpress from "../../public/images/skills/wordpress1.png";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center my-8">
+    <div className="flex flex-col items-center my-8" id="skills">
       <h2 className="underline text-2xl font-bold">Skills</h2>
       <div className="grid grid-cols-3 gap-x-10 md:gap-x-14 gap-y-6 my-8">
         <Image

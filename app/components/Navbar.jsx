@@ -8,44 +8,52 @@ const Navbar = () => {
   const handleClick = () => setIsOpen(!isOpen);
   return (
     <motion.div
-      initial={{ opacity:0, scale: 0 }}
+      initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      
-      transition={{ type: 'spring', duration: 1 }}
+      transition={{ type: "spring", duration: 1 }}
       className=" py-4 px-2 flex justify-between items-center "
     >
       {/* Logo */}
-      <Link href="/" className="text-3xl font-bold">
+      <a href="/" className="text-3xl font-bold">
         Kyrie.
-      </Link>
+      </a>
       {/* Links */}
 
       <div className="hidden gap-4 md:flex ">
-        <Link
-          href="/"
+        <a
+          href="#About"
           className="font-bold text-lg cursor-pointer hover:text-slate-500 hover:ease-in"
         >
-          OverView
-        </Link>
-        <Link
-          href="/"
+          About
+        </a>
+        <a
+          href="#skills"
           className="font-bold text-lg cursor-pointer hover:text-slate-500 hover:ease-in"
         >
-          Demos
-        </Link>
-        <Link
-          href="/"
+          Skills
+        </a>
+        <a
+          href="#features"
           className="font-bold text-lg cursor-pointer hover:text-slate-500 hover:ease-in"
         >
           Features
-        </Link>
+        </a>
+        <a
+          href="#contact"
+          className="font-bold text-lg cursor-pointer hover:text-slate-500 hover:ease-in"
+        >
+          Contact Me
+        </a>
       </div>
       {/* Button */}
       <button
         type="button"
         className="hidden md:flex items-center gap-1 font-bold text-xl cursor-pointer border-b-2 border-[#0F0E0E] hover:border-b-2 hover:border-slate-500 hover:text-slate-400 hover:ease-in"
       >
+        <a href="#contact">
+
         More Details
+        </a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -101,15 +109,15 @@ const Navbar = () => {
             : "md:hidden absolute flex flex-col items-center pt-36 text-white bg-[#0F0E0E] mt-16 w-screen inset-0"
         }
       >
-        <Link href="/" className="text-xl font-bold py-1.5">
+        <a href="/" className="text-xl font-bold py-1.5">
           OverView
-        </Link>
-        <Link href="/" className="text-xl font-bold py-1.5">
+        </a>
+        <a href="/" className="text-xl font-bold py-1.5">
           Demos
-        </Link>
-        <Link href="/" className="text-xl font-bold py-1.5">
+        </a>
+        <a href="/" className="text-xl font-bold py-1.5">
           Features
-        </Link>
+        </a>
       </div>
     </motion.div>
   );

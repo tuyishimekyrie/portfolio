@@ -8,16 +8,13 @@ const Inner = () => {
     <div className="relative  flex overflow-x-scroll snap-mandatory snap-x gap-x-14 py-8 ">
       {data.map((ans, i) => {
         return (
-          <div
-            key={i}
-            className=" flex flex-shrink-0 flex-col snap-center "
-          >
+          <div key={i} className=" flex flex-shrink-0 flex-col snap-center ">
             <Image
-              src={ans.src}
+              src="https://raw.githubusercontent.com/tuyishimekyrie/Page_Images/main/pages/desktop-design.jpg"
               width={100}
               height={400}
               alt={ans.name}
-              className="w-96 h-[30rem] object-cover"
+              className="w-80 h-80 object-contain"
             />
             <p className="text-md md:text-2xl font-semibold pt-4">
               {ans.name} - Website.

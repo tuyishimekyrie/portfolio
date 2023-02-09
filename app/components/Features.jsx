@@ -3,7 +3,7 @@ import { Feature } from "./Feature";
 
 const Features = () => {
   return (
-    <div className="mx-8">
+    <section className="mx-8" id="features">
       <h1 className="text-md md:text-5xl font-bold mb-4">Key Features.</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 ">
         <Feature
@@ -45,7 +45,7 @@ const Features = () => {
           description="UniStudio's support experience is second to none. We not only provide a superior product... we'll be with you every step of the way."
         />
       </div>
-    </div>
+    </section>
   );
 };
 
