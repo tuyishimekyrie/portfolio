@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import html from "../../public/images/skills/html.png";
@@ -12,11 +13,19 @@ import github from "../../public/images/skills/github1.png";
 import vercel from "../../public/images/skills/vercel1.jpg";
 import typescript from "../../public/images/skills/typescript.png";
 import wordpress from "../../public/images/skills/wordpress1.png";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col items-center my-8" id="skills">
-      <h2 className="underline text-2xl font-bold">Skills</h2>
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.45 }}
+      viewport={{ once: true }}
+      className="flex flex-col items-center my-8"
+      id="skills"
+    >
+      <h2 className="underline text-2xl md:text-5xl font-bold">Skills.</h2>
       <div className="grid grid-cols-3 gap-x-10 md:gap-x-14 gap-y-6 my-8">
         <Image
           src={html}
@@ -103,7 +112,7 @@ const Skills = () => {
           className="w-12 h-12 object-cover"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

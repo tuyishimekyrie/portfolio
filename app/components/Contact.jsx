@@ -1,5 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 export default function Contact() {
   const {
     register,
@@ -8,13 +9,22 @@ export default function Contact() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    // console.log(data);
+    console.log(data);
+    window.location.href = `mailto:${data.Email}?body=${data.message}`;
   };
 
-  console.log(watch("example")); // watch input value by passing the name of it
+  // console.log(watch("example"));
+  // watch input value by passing the name of it
 
   return (
-    <div className="flex flex-col items-center my-16" id="contact">
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.45 }}
+      viewport={{ once: true }}
+      className="flex flex-col items-center my-16"
+      id="contact"
+    >
       <h2 className="text-2xl md:text-5xl font-bold underline ">Contact Me.</h2>
       <div className="py-4  font-bold text-xl ">
         <p className="pb-2">Rwanda, Kigali</p>
@@ -45,6 +55,6 @@ export default function Contact() {
           className="bg-slate-700 py-3 rounded-sm font-semibold hover:bg-slate-500 cursor-pointer hover:ease"
         />
       </form>
-    </div>
+    </motion.div>
   );
 }

@@ -49,7 +49,7 @@ import { motion } from "framer-motion";
               d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
             />
           </svg>
-          <p>Export Demos</p>
+          <p>Explore More</p>
         </button>
       </motion.div>
     </motion.div>
