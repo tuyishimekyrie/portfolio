@@ -1,4 +1,5 @@
-[](![alt text](image.png))
+Live Site : https://portfolio-kappa-six-71.vercel.app/
+[Website Preview](![alt text](image.png))
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
