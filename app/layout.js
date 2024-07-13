@@ -5,10 +5,10 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head />
-        <body className="fonters bg-[#0F0E0E] text-white">
-          <Navbar />
-          {children}
-        </body>
+      <body className="fonters bg-[#0F0E0E] text-white">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
