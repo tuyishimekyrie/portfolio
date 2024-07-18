@@ -15,7 +15,7 @@ const About = () => {
           About.
         </h1>
         <h2 className="font-bold text-xl py-4">
-          Hi 👋, I `m Kyrie , a Front end developer with 3 years of experience.
+          Hi 👋, I `m Kyrie , a Front end developer with 4 years of experience.
         </h2>
         <p className="font-semibold ">
           I care a lot about using design for positive impact. and enjoy
